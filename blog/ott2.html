@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY BLOG</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title">금민조 BLOG</h1>
+          <h2 class="master-description">SW A&D</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-left">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">프로필</span>
+                <ul class="inner-menu">
+                  <li class="inner-menu-item"><a href="index.html">소개</a></li>
+                  <li class="inner-menu-item">
+                    <a href="ott2.html">ㅎ오늘</a>
+                    <li class="inner-menu-item">
+                    <a href="oott.html">tmi</a></li>
+                
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Interest</span>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">이번주 날씨 후기</h1>
+              <p class="article-date">2022년07월20일</p>
+            </div>
+            <div class="article-body">
+              <img src="11.jpg" style="width: 410px;">
+              <p>
+                날씨가 너무 더워서 몸이 녹는거같아요 더워 뒤질듯 ㅎㅎ  
+                
+                      어어컨 틀고 누워서 넷플 보고싶다
+            
+            
+              
+              </p>
+            </div>
+          </article>
+        </section>
+        <aside id="main-aside">
+          <div class="aside-list">
+            <h3>디저트</h3>
+            <ul>
+              <li><a href="#">베라</a></li>
+              <li><a href="#">설빙</a></li>
+              <li><a href="#">공차</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h3>최신글</h3>
+            <ul>
+              <li><a href="#">실시간 야붕이 </a></li>
+              <li><a href="#">방학때 학교나오는 흑웈ㅋ </a></li>
+              <li><a href="#">롤 배치 개같이 멸망ㅋㅋ</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer id="main-footer">
+        <a href="https://m.blog.naver.com/azzi_01/222757107553?referrerCode=1"
+        ">Created by me 눌러보셈</a>
+      </footer>
+    </div>
+  </body>
+</html>
